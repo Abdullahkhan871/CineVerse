@@ -75,9 +75,3 @@ interface TrendingCardProps {
   movie: TrendingMovie;
   index: number;
 }
-
-interface TabIconType {
-  focused: boolean;
-  icon: ImageSourcePropType;
-  title: string;
-}

@@ -1,6 +1,18 @@
 import { images } from "@/constants/images";
 import React from "react";
-import { Image, ImageBackground, Text, View } from "react-native";
+import {
+  Image,
+  ImageBackground,
+  ImageSourcePropType,
+  Text,
+  View,
+} from "react-native";
+
+interface TabIconType {
+  focused: boolean;
+  icon: ImageSourcePropType;
+  title: string;
+}
 
 export const TabIcon = ({ focused, icon, title }: TabIconType) => {
   if (!focused)
