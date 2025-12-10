@@ -1,8 +1,8 @@
 export const TMDB_CONFIG = {
-  BaseUrl: "",
-  API_KEY: process.env.EXPO_PUBLIC_URL,
+  BASE_URL: "https://api.themoviedb.org/3",
+  API_KEY: process.env.EXPO_PUBLIC_TMDB_API_KEY,
   header: {
-    accept: "application",
-    Authorization: `Bearer ${process.env.EXPO_PUBLIC_URL}`,
+    accept: "application/json",
+    Authorization: `Bearer ${process.env.EXPO_PUBLIC_TMDB_API_KEY}`,
   },
 };
